@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   display: none;
+  background: #FFFFFF;
 }
 .splash-screen .content-splash {
   max-width: 50%;
@@ -27,4 +28,70 @@
   line-height: normal;
   font-weight: 400;
   color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .welcome-pg {
+  max-width: 100%;
+  height: 50vh;
+  background: #FFA451;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .welcome-pg img {
+  max-width: 100%;
+  height: 100%;
+}
+.container .welcome-title {
+  max-width: 100%;
+  height: 50vh;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "TT Norms Pro", sans-serif;
+}
+.container .welcome-title .welcome-title-content {
+  max-width: 90%;
+  text-align: center;
+}
+.container .welcome-title h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #27214D;
+}
+.container .welcome-title p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 80px;
+  color: #5D577E;
+}
+.container .welcome-title button {
+  width: 327px;
+  height: 56px;
+  background: #FFA451;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 350px) {
+  .container .welcome-title button {
+    max-width: 100%;
+  }
+}
+.container .welcome-title button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
 }/*# sourceMappingURL=style.css.map */

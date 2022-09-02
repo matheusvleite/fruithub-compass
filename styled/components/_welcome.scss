@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     display: none;
+    background: #FFFFFF;
     .content-splash {
        max-width: 50%;
        display: flex;
@@ -30,3 +31,68 @@
        }
     }
 }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    .welcome-pg {
+        max-width: 100%;
+        height: 50vh;
+        background: $color-main;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+    .welcome-title {
+        max-width: 100%;
+        height: 50vh;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        font-family: $font-main;
+        .welcome-title-content {
+            max-width: 90%;
+            text-align: center;
+        }
+        h2 {
+            font-size: $font-size / 3;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 10px;
+            color: $color-sec;
+        }
+        p {
+            font-size: $font-size / 3;
+            font-weight: 400;
+            text-align: left;
+            margin-bottom: 80px;
+            color: $color-thr;
+        }
+        button {
+            width: 327px;
+            height: 56px;
+            background: $color-main;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            @media (max-width:350px) {
+                max-width: 100%;    
+            }
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-size: $font-size / 3;
+                font-weight: 600;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
