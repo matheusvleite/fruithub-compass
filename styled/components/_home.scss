@@ -1,5 +1,9 @@
 @import '../root/var';
 
+body {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 14%,
+     rgba(255,255,255,1) 24%, rgba(229,229,229,0.989233193277311) 68%);
+}
 
 .menu-home {
     max-width: 85%;
@@ -35,8 +39,7 @@
     }
 }
 .content-search {
-    max-width: 85%;
-    margin: 0 auto;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +50,8 @@
         border-radius: 16px;
         background: #F5F5F5;
         display: flex;
-        padding: 0 20px;
+        padding: 0 10px;
+        margin: 3px;
         align-items: center;
         input {
             padding: 0 10px;
@@ -104,6 +108,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         @media (max-width:500px) {
             display: inline-block;
             justify-content: center;
@@ -112,4 +117,73 @@
         }
        }
 }
+}
+.content-recommended {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    .title-recommended {
+        h2 {
+            font-size: $font-size / 2.66;
+            line-height: 40px;
+            border-bottom: 2px solid $color-main;   
+        }
+    }
+    .cards-area {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .card-recommended {
+            max-width: 152px;
+            height: 183px;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-radius: 16px;
+            margin: 10px;
+            position: relative;
+            box-sizing: border-box;
+            .card-content {
+                padding: 12px;
+                .card-like {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .card-add {
+                    position: absolute;
+                    top: 145px;
+                    right: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                h2 {
+                    font-weight: 600;
+                    font-size: $font-size / 3.7;
+                    color: $color-sec;
+                    margin-top: 10px;
+                }
+                p {
+                    color: $color-main;
+                    font-size: $font-size / 3.7;
+                    font-weight: 600;
+                    position: absolute;
+                    top: 150px;
+                    right: 50px;
+                }
+            }
+           
+        
+         }
+    }
+    
 }
