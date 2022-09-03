@@ -1,1 +1,115 @@
 @import '../root/var';
+
+
+.menu-home {
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    ul {
+        .menu-hamburguer {
+            display: inline-block;
+            cursor: pointer;
+        }
+       li {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+        font-size: $font-size / 3.3;
+        color: $font-sec;
+       }
+    }
+    .car {
+        width: 48px;
+        height: 48px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+.content-search {
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .box {
+        width: 288px;
+        height: 56px;
+        border-radius: 16px;
+        background: #F5F5F5;
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        input {
+            padding: 0 10px;
+            outline: none;
+            border: none;
+            background: transparent;
+            flex: 1;
+        }
+    }
+    .filter-search {
+        width: 35px;
+        height: 55px;
+        padding: 5px;
+        background: #F7F7FC;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+}
+
+.filter {
+    .filter-content {
+        max-width: 100%;
+        height: 45px;
+        margin-top: 20px;
+        background: #FAFAFA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width:500px) {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            -webkit-overflow-scrolling: touch;
+             &::-webkit-scrollbar {
+            display: none;
+            }
+        }
+       .card-filter {
+        width: 150px;
+        height: 32px;
+        padding: 0 22px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 
+        0px 0px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width:500px) {
+            display: inline-block;
+            justify-content: center;
+            line-height: 2;
+            text-align: center;
+        }
+       }
+}
+}

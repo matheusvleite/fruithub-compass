@@ -11,19 +11,29 @@
 </head>
 <body>
     <header>
-        <nav> 
+        <nav class="menu-home"> 
             <ul>
-            <img src="../img/Menu.svg" alt="Menu">
-            <h2>Welcome, Chris</h2>
-            <img src="../img/Car.svg">
+            <div class="menu-hamburguer">
+                <img src="../img/Menu.svg" alt="Menu">
+            </div>
+            <li>
+                <h2>Welcome, <span>Matheus</span>.</h2>
+            </li>
             </ul>
+            <div class="car">
+                <img src="../img/Car.svg" class="svg">
+            </div>
         </nav>
         <section class="search">
             <div class="content-search">
-                <input type="text" name="Search" id="search" 
+                <div class="box">
+                    <img src="../img/Search.svg" alt="Search">
+                    <input type="text" name="Search" id="search" 
                 placeholder="Search for fruit salad combos">
-                <img src="../img/Search.svg" alt="Search">
+                </div>
+                <div class="filter-search">
                 <img src="../img/Filter.svg" alt="Filter">
+                </div>
             </div>
         </section>
         <section class="filter">
