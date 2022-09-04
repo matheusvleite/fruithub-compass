@@ -2,7 +2,7 @@
 
 body {
     background: linear-gradient(180deg, rgba(255,255,255,1) 14%,
-     rgba(255,255,255,1) 24%, rgba(229,229,229,0.989233193277311) 68%);
+     rgba(255,255,255,1) 24%, rgba(229,229,229,0.989233193277311) 68%) fixed;
 }
 
 .menu-home {
@@ -210,15 +210,76 @@ body {
                 line-height: 40px;
                 cursor: pointer;
                 font-family: $font-main;
-                // border-bottom: 2px solid $color-main; 
-                &:hover {
-                    border-bottom: 2px solid $color-main;  
-                }
                 &:nth-child(1){
                     border-bottom: 2px solid $color-main; 
                 }
             }
         }
     }
-    
+    .feed-carrousel {
+        max-width: 100%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width:500px) {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            -webkit-overflow-scrolling: touch;
+             &::-webkit-scrollbar {
+            display: none;
+            }
+        }
+    }
+    .cards-feed {
+            width: 140px;
+            height: 150px;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-radius: 16px;
+            margin: 5px;
+            position: relative;
+            box-sizing: border-box;
+            padding: 10px;
+            box-sizing: border-box;
+            .img {
+                width: 64px;
+                height: 64px;
+            }
+            .card-like {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+            }
+            .card-add {
+                position: absolute;
+                top: 110px;
+                right: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+            }
+            h2 {
+                font-weight: 600;
+                font-size: $font-size / 3.7;
+                color: $color-sec;
+                margin-top: 6px;
+            }
+            p {
+                color: $color-main;
+                font-size: $font-size / 3.7;
+                font-weight: 600;
+                position: absolute;
+                top: 115px;
+                right: 50px;
+            }
+    }
 }
