@@ -2,7 +2,7 @@
 
 body {
     background: linear-gradient(180deg, rgba(255,255,255,1) 14%,
-     rgba(255,255,255,1) 24%, rgba(229,229,229,0.989233193277311) 68%) fixed;
+     rgba(255,255,255,1) 24%, rgba(229,229,229,0.989233193277311) 68%);
 }
 
 .menu-home {
@@ -132,7 +132,6 @@ body {
             font-size: $font-size / 2.66;
             line-height: 40px;
             border-bottom: 2px solid $color-main; 
-            font-family: $font-main;
         }
     }
     .cards-area {
@@ -209,9 +208,8 @@ body {
                 font-size: $font-size / 2.66;
                 line-height: 40px;
                 cursor: pointer;
-                font-family: $font-main;
                 &:nth-child(1){
-                    border-bottom: 2px solid $color-main; 
+                border-bottom: 2px solid $color-main; 
                 }
             }
         }
@@ -238,13 +236,21 @@ body {
             width: 140px;
             height: 150px;
             text-align: center;
-            background-color: #FFFFFF;
             border-radius: 16px;
             margin: 5px;
             position: relative;
             box-sizing: border-box;
             padding: 10px;
             box-sizing: border-box;
+            &:nth-child(1){
+                background: #FFFCF2;
+            }
+            &:nth-child(2){
+                background: #FEF4F4;
+            }
+            &:nth-child(3){
+                background: #F1EFF6;
+            }
             .img {
                 width: 64px;
                 height: 64px;
