@@ -235,6 +235,9 @@ body {
   flex-direction: column;
   margin-top: 30px;
 }
+.content-recommended a {
+  text-decoration: none;
+}
 .content-recommended .title-recommended {
   width: 85%;
 }
@@ -303,6 +306,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.content-feed a {
+  text-decoration: none;
 }
 .content-feed .list-feed {
   width: 85%;

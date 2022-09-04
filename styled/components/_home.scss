@@ -125,6 +125,9 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
+    a {
+        text-decoration: none;
+    }
     .title-recommended {
         width: 85%;
         h2 {
@@ -198,6 +201,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    a {
+        text-decoration: none;
+    }
     .list-feed {
         width: 85%;
         ul {
