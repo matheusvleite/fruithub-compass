@@ -240,10 +240,11 @@ body {
   width: 85%;
 }
 .content-recommended .title-recommended h2 {
-  max-width: 170px;
+  max-width: 190px;
   font-size: 1.1278195489rem;
   line-height: 40px;
   border-bottom: 2px solid #FFA451;
+  font-family: "TT Norms Pro", sans-serif;
 }
 .content-recommended .cards-area {
   display: flex;
@@ -296,4 +297,32 @@ body {
   position: absolute;
   top: 150px;
   right: 50px;
+}
+
+.content-feed {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-feed .list-feed {
+  width: 85%;
+}
+.content-feed .list-feed ul {
+  max-width: 260px;
+  display: flex;
+}
+.content-feed .list-feed ul li {
+  margin: 3px;
+  font-size: 1.1278195489rem;
+  line-height: 40px;
+  cursor: pointer;
+  font-family: "TT Norms Pro", sans-serif;
+}
+.content-feed .list-feed ul li:hover {
+  border-bottom: 2px solid #FFA451;
+}
+.content-feed .list-feed ul li:nth-child(1) {
+  border-bottom: 2px solid #FFA451;
 }/*# sourceMappingURL=style.css.map */

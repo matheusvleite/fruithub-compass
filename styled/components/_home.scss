@@ -128,10 +128,11 @@ body {
     .title-recommended {
         width: 85%;
         h2 {
-            max-width: 170px;
+            max-width: 190px;
             font-size: $font-size / 2.66;
             line-height: 40px;
             border-bottom: 2px solid $color-main; 
+            font-family: $font-main;
         }
     }
     .cards-area {
@@ -188,6 +189,36 @@ body {
            
         
          }
+    }
+    
+}
+
+.content-feed {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .list-feed {
+        width: 85%;
+        ul {
+            max-width: 260px;
+            display: flex;
+            li {
+                margin: 3px;
+                font-size: $font-size / 2.66;
+                line-height: 40px;
+                cursor: pointer;
+                font-family: $font-main;
+                // border-bottom: 2px solid $color-main; 
+                &:hover {
+                    border-bottom: 2px solid $color-main;  
+                }
+                &:nth-child(1){
+                    border-bottom: 2px solid $color-main; 
+                }
+            }
+        }
     }
     
 }
