@@ -126,10 +126,12 @@ body {
     flex-direction: column;
     margin-top: 30px;
     .title-recommended {
+        width: 85%;
         h2 {
+            max-width: 170px;
             font-size: $font-size / 2.66;
             line-height: 40px;
-            border-bottom: 2px solid $color-main;   
+            border-bottom: 2px solid $color-main; 
         }
     }
     .cards-area {
@@ -140,7 +142,7 @@ body {
         justify-content: center;
         
         .card-recommended {
-            max-width: 152px;
+            width: 152px;
             height: 183px;
             text-align: center;
             background-color: #FFFFFF;
@@ -157,6 +159,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    cursor: pointer;
                 }
                 .card-add {
                     position: absolute;
@@ -165,6 +168,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    cursor: pointer;
                 }
                 h2 {
                     font-weight: 600;
