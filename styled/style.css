@@ -1,11 +1,15 @@
-html, body {
-  font-family: "Bad Script", cursive;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TT Norms Pro", sans-serif;
 }
 
 .splash-screen {
   width: 100%;
-  height: 100vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
   right: 0;
   display: flex;
@@ -30,8 +34,8 @@ html, body {
   background-color: #FFA451;
   text-align: center;
   border-radius: 15px 0 15px 0;
-  font-family: "Bad Script", cursive;
   font-size: 1.5rem;
+  font-family: "Bad Script", cursive;
   line-height: normal;
   font-weight: 400;
   color: #FFFFFF;
@@ -39,10 +43,10 @@ html, body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .container .welcome-pg {
-  width: 100%;
+  max-width: 100%;
   background: #FFA451;
   display: flex;
   flex-direction: column;
@@ -55,16 +59,15 @@ html, body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  box-sizing: border-box;
 }
 .container .welcome-pg .img-welcome img {
   max-width: 100%;
 }
 .container .welcome-title {
-  width: 100%;
+  max-width: 100%;
 }
 .container .welcome-title .welcome-title-content {
-  max-width: 85%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +96,6 @@ html, body {
   outline: none;
   background: #F7F5F5;
   padding: 0 20px;
-  box-sizing: border-box;
   font-size: 1rem;
   color: rgba(194, 189, 189, 0.6980392157);
   display: block;
@@ -119,7 +121,7 @@ html, body {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 @media (max-width: 350px) {
   .container .welcome-title button {
@@ -201,13 +203,13 @@ html, body {
   justify-content: center;
   margin: 3px;
   font-size: 0.9090909091rem;
-  color: "Bad Script", cursive;
+  color: #27214D;
 }
 .menu-home .car {
   width: 48px;
   height: 48px;
   background: #FFFFFF;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -216,20 +218,20 @@ html, body {
 }
 
 .content-search {
-  max-width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 .content-search .box {
-  width: 288px;
+  width: 585px;
   height: 56px;
   border-radius: 16px;
   background: #F5F5F5;
   display: flex;
   padding: 0 10px;
-  margin: 3px;
   align-items: center;
 }
 .content-search .box input {
@@ -250,10 +252,9 @@ html, body {
   justify-content: center;
   margin: 0 5px;
   cursor: pointer;
-  box-sizing: border-box;
 }
 
-.filter .filter-content {
+.filter-content {
   max-width: 100%;
   height: 45px;
   margin-top: 20px;
@@ -263,7 +264,7 @@ html, body {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .filter .filter-content {
+  .filter-content {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -271,11 +272,11 @@ html, body {
     justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
   }
-  .filter .filter-content::-webkit-scrollbar {
+  .filter-content::-webkit-scrollbar {
     display: none;
   }
 }
-.filter .filter-content .card-filter {
+.filter-content .card-filter {
   width: 150px;
   height: 32px;
   padding: 0 22px;
@@ -289,7 +290,7 @@ html, body {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .filter .filter-content .card-filter {
+  .filter-content .card-filter {
     display: inline-block;
     justify-content: center;
     line-height: 2;
@@ -309,7 +310,11 @@ html, body {
   text-decoration: none;
 }
 .content-recommended .title-recommended {
-  width: 85%;
+  width: 77%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
 }
 .content-recommended .title-recommended h2 {
   font-size: 1.1278195489rem;
@@ -326,7 +331,6 @@ html, body {
   display: flex;
   max-width: 100%;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .content-recommended .cards-area .card-recommended {
@@ -337,7 +341,6 @@ html, body {
   border-radius: 16px;
   margin: 10px;
   position: relative;
-  box-sizing: border-box;
 }
 .content-recommended .cards-area .card-recommended .card-content {
   padding: 12px;
@@ -346,18 +349,12 @@ html, body {
   position: absolute;
   top: 10px;
   right: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   cursor: pointer;
 }
 .content-recommended .cards-area .card-recommended .card-content .card-add {
   position: absolute;
-  top: 145px;
+  top: 144px;
   right: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   cursor: pointer;
 }
 .content-recommended .cards-area .card-recommended .card-content h2 {
@@ -368,7 +365,7 @@ html, body {
 }
 .content-recommended .cards-area .card-recommended .card-content p {
   color: #FFA451;
-  font-size: 0.8108108108rem;
+  font-size: 0.7894736842rem;
   font-weight: 600;
   position: absolute;
   top: 150px;
@@ -381,21 +378,25 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 10px;
 }
 .content-feed a {
   text-decoration: none;
 }
 .content-feed .list-feed {
-  width: 85%;
+  width: 77%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
 }
 .content-feed .list-feed ul {
   display: flex;
 }
 .content-feed .list-feed ul li {
-  margin: 3px;
-  font-size: 1.1278195489rem;
-  line-height: 40px;
+  font-size: 1rem;
   cursor: pointer;
+  margin-left: 3px;
 }
 .content-feed .list-feed ul li:nth-child(1)::after {
   content: "";
@@ -408,7 +409,6 @@ html, body {
 .content-feed .feed-carrousel {
   max-width: 100%;
   margin-top: 10px;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,9 +433,7 @@ html, body {
   border-radius: 16px;
   margin: 5px;
   position: relative;
-  box-sizing: border-box;
   padding: 10px;
-  box-sizing: border-box;
 }
 .content-feed .cards-feed:nth-child(1) {
   background: #FFFCF2;
@@ -616,7 +614,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .product-description .product-buttons .cursor {
   cursor: pointer;
