@@ -2,7 +2,6 @@
 
 .product {
     max-width: 100%;
-    height: 40%;
     background: $color-main;
     display: flex;
     align-items: center;
@@ -33,7 +32,7 @@
 
     .product-img {
         margin-top: 50px;
-
+        margin-bottom: 30px;
         img {
             width: 176px;
             height: 176px;
@@ -43,12 +42,10 @@
 
 .product-description {
     max-width: 100%;
-    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #FFFFFF;
 
     .product-info {
         width: 85%;
@@ -62,6 +59,7 @@
             font-weight: 500;
             margin-bottom: 20px;
             color: $color-sec;
+            
         }
 
         .cursor {
@@ -102,6 +100,14 @@
             h2 {
                 font-size: $font-size / 2.5;
                 color: $color-sec;
+                &::after{
+                    content: "";
+                    width: 50px;
+                    margin-top: 10px;
+                    display: block;
+                    color: $color-main;
+                    border-bottom: 2px solid $color-main;
+                }
             }
         }
     }
@@ -148,7 +154,7 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 50px;
-        
+        margin-bottom: 20px;
         .cursor {
             cursor: pointer;
         }

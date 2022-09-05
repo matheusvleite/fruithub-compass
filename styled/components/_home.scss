@@ -1,9 +1,5 @@
 @import '../root/var';
 
-body {
-    background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1) 57%, rgba(255,255,255,1) 96%);
-}
 
 .menu-home {
     max-width: 85%;
@@ -12,20 +8,23 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+
     ul {
         .menu-hamburguer {
             display: inline-block;
             cursor: pointer;
         }
-       li {
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-        margin: 3px;
-        font-size: $font-size / 3.3;
-        color: $font-sec;
-       }
+
+        li {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            margin: 3px;
+            font-size: $font-size / 3.3;
+            color: $font-sec;
+        }
     }
+
     .car {
         width: 48px;
         height: 48px;
@@ -38,12 +37,14 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
         cursor: pointer;
     }
 }
+
 .content-search {
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+
     .box {
         width: 288px;
         height: 56px;
@@ -53,6 +54,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
         padding: 0 10px;
         margin: 3px;
         align-items: center;
+
         input {
             padding: 0 10px;
             outline: none;
@@ -61,6 +63,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
             flex: 1;
         }
     }
+
     .filter-search {
         width: 35px;
         height: 55px;
@@ -85,6 +88,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
         display: flex;
         align-items: center;
         justify-content: center;
+
         @media (max-width:500px) {
             overflow-x: scroll;
             overflow-y: hidden;
@@ -92,32 +96,36 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
             align-items: flex-start;
             justify-content: flex-start;
             -webkit-overflow-scrolling: touch;
-             &::-webkit-scrollbar {
-            display: none;
+
+            &::-webkit-scrollbar {
+                display: none;
             }
         }
-       .card-filter {
-        width: 150px;
-        height: 32px;
-        padding: 0 22px;
-        background: #FFFFFF;
-        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05), 
-        0px 0px 1px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        margin: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        @media (max-width:500px) {
-            display: inline-block;
+
+        .card-filter {
+            width: 150px;
+            height: 32px;
+            padding: 0 22px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05),
+                0px 0px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            line-height: 2;
-            text-align: center;
+            cursor: pointer;
+
+            @media (max-width:500px) {
+                display: inline-block;
+                justify-content: center;
+                line-height: 2;
+                text-align: center;
+            }
         }
-       }
+    }
 }
-}
+
 .content-recommended {
     max-width: 100%;
     display: flex;
@@ -125,36 +133,48 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
+
     a {
         text-decoration: none;
     }
+
     .title-recommended {
         width: 85%;
+
         h2 {
-            max-width: 200px;
             font-size: $font-size / 2.66;
-            line-height: 40px;
-            border-bottom: 2px solid $color-main; 
+
+            &::after {
+                content: "";
+                width: 50px;
+                margin-top: 10px;
+                display: block;
+                color: $color-main;
+                border-bottom: 2px solid $color-main;
+            }
         }
     }
+
     .cards-area {
         display: flex;
         max-width: 100%;
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        
+
         .card-recommended {
             width: 152px;
             height: 183px;
             text-align: center;
-            background-color: #FFFFFF;
+            background-color: #FAFAFA;
             border-radius: 16px;
             margin: 10px;
             position: relative;
             box-sizing: border-box;
+
             .card-content {
                 padding: 12px;
+
                 .card-like {
                     position: absolute;
                     top: 10px;
@@ -164,6 +184,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
                     align-items: center;
                     cursor: pointer;
                 }
+
                 .card-add {
                     position: absolute;
                     top: 145px;
@@ -173,12 +194,14 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
                     align-items: center;
                     cursor: pointer;
                 }
+
                 h2 {
                     font-weight: 600;
                     font-size: $font-size / 3.7;
                     color: $color-sec;
                     margin-top: 10px;
                 }
+
                 p {
                     color: $color-main;
                     font-size: $font-size / 3.7;
@@ -188,11 +211,11 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
                     right: 50px;
                 }
             }
-           
-        
-         }
+
+
+        }
     }
-    
+
 }
 
 .content-feed {
@@ -201,31 +224,45 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     a {
         text-decoration: none;
     }
+
     .list-feed {
         width: 85%;
+
         ul {
-            max-width: 260px;
             display: flex;
+
             li {
                 margin: 3px;
                 font-size: $font-size / 2.66;
                 line-height: 40px;
                 cursor: pointer;
-                &:nth-child(1){
-                border-bottom: 2px solid $color-main; 
+
+                &:nth-child(1) {
+                    &::after {
+                        content: "";
+                        width: 30px;
+                        margin-top: 10px;
+                        display: block;
+                        color: $color-main;
+                        border-bottom: 2px solid $color-main;
+                    }
                 }
             }
         }
     }
+
     .feed-carrousel {
         max-width: 100%;
         margin-top: 10px;
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+
         @media (max-width:500px) {
             overflow-x: scroll;
             overflow-y: hidden;
@@ -233,65 +270,75 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(229,229,229,1)
             align-items: flex-start;
             justify-content: flex-start;
             -webkit-overflow-scrolling: touch;
-             &::-webkit-scrollbar {
-            display: none;
+
+            &::-webkit-scrollbar {
+                display: none;
             }
         }
     }
+
     .cards-feed {
-            width: 140px;
-            height: 150px;
-            text-align: center;
-            border-radius: 16px;
-            margin: 5px;
-            position: relative;
-            box-sizing: border-box;
-            padding: 10px;
-            box-sizing: border-box;
-            &:nth-child(1){
-                background: #FFFCF2;
-            }
-            &:nth-child(2){
-                background: #FEF4F4;
-            }
-            &:nth-child(3){
-                background: #F1EFF6;
-            }
-            .img {
-                width: 64px;
-                height: 64px;
-            }
-            .card-like {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                cursor: pointer;
-            }
-            .card-add {
-                position: absolute;
-                top: 110px;
-                right: 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                cursor: pointer;
-            }
-            h2 {
-                font-weight: 600;
-                font-size: $font-size / 3.7;
-                color: $color-sec;
-                margin-top: 6px;
-            }
-            p {
-                color: $color-main;
-                font-size: $font-size / 3.7;
-                font-weight: 600;
-                position: absolute;
-                top: 115px;
-                right: 50px;
-            }
+        width: 140px;
+        height: 150px;
+        text-align: center;
+        border-radius: 16px;
+        margin: 5px;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        box-sizing: border-box;
+
+        &:nth-child(1) {
+            background: #FFFCF2;
+        }
+
+        &:nth-child(2) {
+            background: #FEF4F4;
+        }
+
+        &:nth-child(3) {
+            background: #F1EFF6;
+        }
+
+        .img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .card-like {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .card-add {
+            position: absolute;
+            top: 110px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: $font-size / 3.7;
+            color: $color-sec;
+            margin-top: 6px;
+        }
+
+        p {
+            color: $color-main;
+            font-size: $font-size / 3.7;
+            font-weight: 600;
+            position: absolute;
+            top: 115px;
+            right: 50px;
+        }
     }
 }

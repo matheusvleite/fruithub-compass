@@ -1,186 +1,217 @@
 @import '../root/var';
 
+body {
+        font-family: $font-main;
+}
+
 .splash-screen {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
-    .content-splash {
-       max-width: 50%;
-       display: flex;
-       flex-direction: column;
-       -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-       animation: heartbeat 1.5s ease-in-out infinite both;
-       .img-splash {
-        max-width: 100%;
-        text-align: center;
-       }
-       .btn-splash {
-        width: 184px;
-        background-color: $color-main;
-        text-align: center;
-        border-radius: 15px 0 15px 0;
-        font-family: $font-sec;
-        font-size: $font-size / 2;
-        line-height: normal;
-        font-weight: 400;
-        color: #FFFFFF;
-       }
-    }
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        .content-splash {
+                max-width: 85%;
+                display: flex;
+                flex-direction: column;
+                -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+
+                .img-splash {
+                        max-width: 100%;
+                        text-align: center;
+                }
+
+                .btn-splash {
+                        width: 184px;
+                        background-color: $color-main;
+                        text-align: center;
+                        border-radius: 15px 0 15px 0;
+                        font-size: $font-size / 2;
+                        font-family: 'Bad Script', cursive;
+                        line-height: normal;
+                        font-weight: 400;
+                        color: #FFFFFF;
+                }
+        }
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    .welcome-pg {
-        max-width: 100%;
-        height: 70%;
-        background: $color-main;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;   
-    }
-    .welcome-title {
-        max-width: 100%;
-        height: 30%;
-        background: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;  
-        .welcome-title-content {
-            max-width: 85%;
-            height: 30%;
-            text-align: center;
-        }
-        h2 {
-            font-size: $font-size / 3;
-            font-weight: 700;
-            text-align: left;
-            margin-bottom: 15px;
-            color: $color-sec;
-        }
-        p {
-            font-size: $font-size / 3;
-            font-weight: 400;
-            text-align: left;
-            margin-bottom: 80px;
-            color: $color-thr;
-        }
-        input {
-            width: 327px;
-            height: 56px;
-            border-radius: 10px;
-            border: none;
-            outline: none;
-            background: #F7F5F5;
-            padding: 0 20px;
-            box-sizing: border-box;
-            font-size: $font-size / 3;
-            color: #C2BDBDB2;
-            display: block;
-            margin-bottom: 50px;
-            @media (max-width:350px) {
-                max-width: 100%;    
-            }
-        }
-        
-        #error {
-                margin-bottom: 30px;
-                color: #FF0000;
-                font-weight: bolder;
+        width: 100%;
+        height: 100vh;
+
+        .welcome-pg {
+                width: 100%;
+                background: $color-main;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .img-welcome {
+                        max-width: 85%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px;
+                        box-sizing: border-box;  
+                        img {
+                                max-width: 100%;
+                        } 
+                }
         }
 
-                button {
-                    font-weight: 600;
-                    width: 327px;
-                    height: 56px;
-                    background: $color-main;
-                    border: none;
-                    color: #FFFFFF;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    @media (max-width:350px) {
-                        max-width: 100%;    
-                    }
+        .welcome-title {
+                width: 100%;
+                .welcome-title-content {
+                        max-width: 85%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin: 0 auto;
                 }
-            
-    }
+
+                h2 {
+                        font-size: $font-size / 3;
+                        font-weight: 700;
+                        text-align: left;
+                        color: $color-sec;
+                        margin-top: 20px;
+                }
+
+                p {
+                        font-size: $font-size / 3;
+                        font-weight: 400;
+                        text-align: left;
+                        color: $color-thr;
+                        margin-top: 10px;
+                }
+
+                input {
+                        width: 327px;
+                        height: 56px;
+                        border-radius: 10px;
+                        border: none;
+                        outline: none;
+                        background: #F7F5F5;
+                        padding: 0 20px;
+                        box-sizing: border-box;
+                        font-size: $font-size / 3;
+                        color: #C2BDBDB2;
+                        display: block;
+                        margin-top: 15px;
+
+                        @media (max-width:350px) {
+                                max-width: 100%;
+                        }
+                }
+
+                #error {
+                        color: #FF0000;
+                        font-weight: bolder;
+                        margin-top: 15px;
+                }
+
+                button {
+                        font-weight: 600;
+                        width: 327px;
+                        height: 56px;
+                        background: $color-main;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+                        @media (max-width:350px) {
+                                width: 250px;
+                        }
+                }
+
+        }
 }
 
 // Animation Reload
 
 @-webkit-keyframes heartbeat {
-    from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: center center;
-              transform-origin: center center;
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    10% {
-      -webkit-transform: scale(0.91);
-              transform: scale(0.91);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    17% {
-      -webkit-transform: scale(0.98);
-              transform: scale(0.98);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    33% {
-      -webkit-transform: scale(0.87);
-              transform: scale(0.87);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    45% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-  }
-  @keyframes heartbeat {
-    from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: center center;
-              transform-origin: center center;
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    10% {
-      -webkit-transform: scale(0.91);
-              transform: scale(0.91);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    17% {
-      -webkit-transform: scale(0.98);
-              transform: scale(0.98);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    33% {
-      -webkit-transform: scale(0.87);
-              transform: scale(0.87);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    45% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-  }
-  
+        from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
+
+@keyframes heartbeat {
+        from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
