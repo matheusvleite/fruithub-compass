@@ -1,7 +1,7 @@
 <h2>Development project for Compass PB.</h2>
 
 
-<a href="" target="_blank">DEMO HERE</a>
+<a href="https://matheusvleite.github.io/fruithub-compass/" target="_blank">DEMO HERE</a>
 
 <h2>Technologies used:</h2>
 <h3>HTML</h3>
