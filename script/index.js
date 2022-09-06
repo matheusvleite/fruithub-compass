@@ -18,7 +18,8 @@
          const error = document.getElementById('error');
          error.innerHTML = "Please confirm your name";
       }else {
-         window.location.replace("/pages/home.html");
+      // If you use remeber remove /fruithub-compass/
+         window.location.replace("/fruithub-compass/pages/home.html");
          localStorage.setItem('user' , input.value);
       }   
    })
